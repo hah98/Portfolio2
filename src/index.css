@@ -1,51 +1,16 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   /* pink to purple yeyyy :) */
-  background: linear-gradient(to bottom, rgba(255, 182, 193, 1) 0%, rgba(147, 112, 219, 1) 100%); 
+  background: linear-gradient(to bottom, rgba(255, 182, 193, 1) 0%, rgba(147, 112, 219, 1) 100%);
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-/* Nav bar styling */
-.navbar {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(71, 71, 71, 0.2); 
-  color: white; 
-  z-index: 1000;
-  padding: 15px;
-}
-
-
-.navbar a {
-  color: white; 
-  text-decoration: none;
-  padding: 10px;
-}
-
-.navbar a:hover {
-  color: #ff69b4; 
-}
-
-/* Other styles for navbar links */
-.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.7); 
-}
-
-.navbar-toggler-icon {
-  background-color: rgba(255, 255, 255, 0.7); 
-}
-
 
 /* Home Section */
 section#home {
@@ -94,59 +59,38 @@ section#home p {
   transform: scale(1.2);
 }
 
-/* Other Sections */
-section {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
+#about {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.tech-stack {
   text-align: center;
-  padding: 0;
-  margin: 0;
-  color: black;
-  background: radial-gradient(circle, rgba(186, 85, 211, 1) 0%, rgba(221, 160, 221, 0.8) 40%, rgba(255, 255, 255, 1) 100%);
 }
 
-/* White gradient fade only in the last section at the bottom */
-section:last-child::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-  pointer-events: none;
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;  
+  flex-wrap: wrap;
 }
 
-/* No bottom gradient for other sections */
-section:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: none;
-  pointer-events: none;
+.tech-icon {
+  font-size: 60px; 
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 10px;
 }
 
-.card-img {
-  width: 100%;  
-  height: 200px;      
-  object-fit: cover;   
+.tech-icon:hover {
+  transform: scale(1.2);  
+  color: #f06292;  
 }
 
-/* Custom Pink Button */
-.btn.btn-pink {
-  background-color: #ff66b2; 
-  border-color: #ff66b2;    
+h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
-
-.btn.btn-pink:hover {
-  background-color: #ff3385; 
-  border-color: #ff3385;
-}
-
