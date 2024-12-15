@@ -4,17 +4,22 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState('');
 
   const handleScroll = () => {
-    const sections = ['home', 'projects', 'about', 'contact'];
-    let found = false;
+    const sections = ['home', 'about', 'projects', /* 'contact' */];
+    let activeSection = '';
 
     sections.forEach((section) => {
       const el = document.getElementById(section);
-      if (el && !found && el.getBoundingClientRect().top <= window.innerHeight / 2) {
-        setActiveLink(section);
-        found = true;
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+          activeSection = section;
+        }
       }
     });
+
+    setActiveLink(activeSection);
   };
+
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -28,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#home">My Portfolio</a>
+        <a className="navbar-brand" href="#home">Hibo H.</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -61,7 +66,7 @@ const Navbar = () => {
                 Projects
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 className={`nav-link ${activeLink === 'contact' ? 'text-white' : ''}`}
                 href="#contact"
@@ -69,7 +74,7 @@ const Navbar = () => {
               >
                 Contact
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
