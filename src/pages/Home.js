@@ -17,7 +17,7 @@ const Home = () => {
             <a href="https://github.com/hah98" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/hibo-h-4838b4263/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
@@ -57,11 +57,11 @@ const Home = () => {
       {/* Fix sizing to match */}
       <section id="projects" className="py-5">
         <div className="container">
-          <h2 className="text-center mb-5">My Projects</h2>
+          <h2 className="text-center mb-5">My University Projects</h2>
           
           {/* Noroff Projects Section */}
           <div className="row">
-            {/* Noroff Project 2 Card */}
+            {/* Noroff Project 1 Card */}
             <div className="col-md-4 mb-4">
               <div className="card">
                 <img src="/assets/images/sp2image.png" className="card-img" alt="Noroff Project 1" />
@@ -95,20 +95,49 @@ const Home = () => {
                   <h5 className="card-title">Project Exam 2</h5>
                   <p className="card-text">Welcome to Holidaze, an accommodation booking platform. This project focuses on creating a whole booking platform.</p>
                   <a href="https://github.com/hah98/ProjectExam2/tree/main" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                  <a href="https://noroff-project3-live.com" className="btn btn-pink ml-2" target="_blank" rel="noopener noreferrer"> No Live Site</a>
+                  <a href="https://projectexam2hibo.netlify.app/" className="btn btn-pink ml-2" target="_blank" rel="noopener noreferrer"> Live Site</a>
                 </div>
               </div>
             </div>
+
+           {/* Other Projects Section */}
+          <section id="other-projects" className="py-5">
+            <div className="container">
+            <h2 className="text-center mb-5">Other Projects ⭐</h2>
+        
+          <div className="row justify-content-center">
+            {/* Other Project 1 */}
+            <div className="col-md-6 col-lg-5 mb-4">
+              <div className="card">
+                <img src="/assets/images/snakegamepic.png" className="card-img" alt="Snake Game" />
+                <div className="card-body">
+                  <h5 className="card-title">Snake Game</h5>
+                  <p className="card-text">A simple and fun version of the classic Snake game. Let's go back to the 90s Nokia vibe!</p>
+                  <a href="https://github.com/hah98/snakeGame" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                  <a href="https://snakegamehah98.netlify.app/" className="btn btn-pink ml-2" target="_blank" rel="noopener noreferrer">Click to Play</a>
+                </div>
+              </div>
+            </div>
+
+      {/* Other Project 2 */}
+      <div className="col-md-6 col-lg-5 mb-4">
+        <div className="card">
+          <img src="/assets/images/tictacttoepic.png" className="card-img" alt="Tic Tac Toe" />
+          <div className="card-body">
+            <h5 className="card-title">Tic Tac Toe</h5>
+            <p className="card-text">A simple Tic Tac Toe game built in Python for fun and learning.</p>
+            <a href="https://github.com/hah98/TicTacToe" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="https://github.com/hah98" className="btn btn-pink ml-2" target="_blank" rel="noopener noreferrer">No Live Site</a>
           </div>
         </div>
-      </section>
-
-      {/* Contact Section */}
-     {/*  <section id="contact">
-        <h2>Contact</h2>
-        <p>How to contact me.</p>
-      </section> */}
+      </div>
     </div>
+  </div>
+</section>   
+    </div>
+  </div>
+</section>
+</div>
   );
 };
 
