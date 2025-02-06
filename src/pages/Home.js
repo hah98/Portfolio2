@@ -112,7 +112,7 @@ const Home = () => {
                 <img src="/assets/images/snakegamepic.png" className="card-img" alt="Snake Game" />
                 <div className="card-body">
                   <h5 className="card-title">Snake Game</h5>
-                  <p className="card-text">A simple and fun version of the classic Snake game. Let's go back to the 90s Nokia vibe!</p>
+                  <p className="card-text">A simple and fun version of the classic Snake game. Let's go back to the 90s and 2000's for the Nokia vibe!</p>
                   <a href="https://github.com/hah98/snakeGame" className="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                   <a href="https://snakegamehah98.netlify.app/" className="btn btn-pink ml-2" target="_blank" rel="noopener noreferrer">Click to Play</a>
                 </div>
